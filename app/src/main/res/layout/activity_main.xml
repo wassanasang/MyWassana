@@ -7,8 +7,17 @@
     android:layout_height="match_parent"
     tools:context="stech.sangsoontorn.wassana.mywassana.MainActivity">
 
+    <ImageView
+        android:scaleType="centerCrop"
+        android:src="@drawable/sririwattana"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
 
     <LinearLayout
+        android:padding="@dimen/margin2"
+        android:layout_margin="@dimen/margin"
+        android:background="#86ffffff"
         android:layout_marginTop="@dimen/h1"
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
@@ -42,24 +51,28 @@
 
         <LinearLayout
 
-            android:layout_marginTop="@dimen/margin2"
-            android:layout_marginRight="@dimen/margin"
-            android:layout_marginLeft="@dimen/margin"
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-          <ImageView
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginTop="@dimen/margin2"
+            android:orientation="horizontal">
+
+            <ImageView
 
 
-              android:src="@mipmap/ic_user"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_user" />
+
             <EditText
-                android:hint="@string/user"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:hint="@string/user" />
 
-        </LinearLayout><LinearLayout
+        </LinearLayout>
+
+        <LinearLayout
 
 
             android:layout_marginRight="@dimen/margin"
@@ -78,7 +91,23 @@
                 android:layout_height="wrap_content" />
 
         </LinearLayout>
+        <TextView
+            android:textStyle="bold"
+            android:textColor="#f1091c"
+            android:textSize="@dimen/h2"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/new_regeister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
     </LinearLayout>
+    <Button
+
+        android:text="@string/login"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
 </RelativeLayout>
 
 
