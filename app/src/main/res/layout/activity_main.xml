@@ -66,6 +66,7 @@
                 android:src="@mipmap/ic_user" />
 
             <EditText
+                android:id="@+id/edtUser"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="@string/user" />
@@ -80,33 +81,42 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-          <ImageView
 
-              android:src="@mipmap/ic_password"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content" />
+            <ImageView
+
+                android:src="@mipmap/ic_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
             <EditText
+                android:id="@+id/edtPassword"
                 android:hint="password :"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
         </LinearLayout>
+
         <TextView
-            android:textStyle="bold"
-            android:textColor="#f1091c"
-            android:textSize="@dimen/h2"
+
+            android:id="@+id/txtRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="@string/new_regeister"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:textColor="#f1091c"
+            android:textSize="@dimen/h2"
+            android:textStyle="bold" />
 
     </LinearLayout>
-    <Button
 
+    <Button
+        android:id="@+id/btnLogin"
         android:text="@string/login"
-        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
 
